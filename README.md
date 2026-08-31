@@ -22,7 +22,7 @@ I designed the case in Onshape.
 
 The case has a bottom part and a top plate, with space for the PCB, switches, OLED, and the USB-C port.
 
-[CAD image here]
+![CAD](screenshots/CAD image (2).png)
 
 ## PCB
 
@@ -32,11 +32,11 @@ It uses a 4x4 matrix with 16 switches and 16 1N4148 diodes.
 
 ### Schematic
 
-[Schematic image here]
+![Schematic](screenshots/Schematic image.png)
 
 ### PCB
 
-[PCB image here]
+![PCB](screenshots/PCB image.png)
 
 ## Firmware
 
