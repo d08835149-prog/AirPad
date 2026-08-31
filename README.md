@@ -1,41 +1,74 @@
 # AirPad
 
-AirPad is a 16-key macropad I made to make some things I do on my computer faster.
+AirPad is a 16-key macropad with an OLED display, powered by a XIAO RP2040.
 
-It has a 4x4 key layout, a XIAO RP2040, and a small OLED display. I designed the PCB and case and wrote the firmware using QMK.
+I made it mainly for shortcuts and programs I use often on my computer.
+It uses QMK firmware.
 
-## What can it do?
+## Features
+
+- 16 mechanical keys
+- 0.91" OLED display
+- XIAO RP2040
+- 4x4 key matrix
+- Custom PCB
+- Custom case
+- QMK firmware
+- Shortcuts for Windows, programs, and YouTube
+
+## CAD Model
+
+I designed the case in Onshape.
+
+The case has a bottom part and a top plate, with space for the PCB, switches, OLED, and the USB-C port.
+
+[CAD image here]
+
+## PCB
+
+I made the PCB in KiCad.
+
+It uses a 4x4 matrix with 16 switches and 16 1N4148 diodes.
+
+### Schematic
+
+[Schematic image here]
+
+### PCB
+
+[PCB image here]
+
+## Firmware
+
+AirPad uses QMK firmware.
+
+The keys are:
 
 | | | | |
 |---|---|---|---|
 | Calculator | Volume + | Volume - | Screenshot |
 | Copy | Paste | VS Code | Notepad |
 | Discord | File Explorer | Undo | Redo |
-| YouTube Mute | Play/Pause | Previous | Next |
+| YouTube Mute | Play/Pause | Previous Video | Next Video |
 
-The OLED shows the name of the key I just pressed.
+Some keys use normal keyboard shortcuts, while the program keys can open VS Code, Notepad, Discord, and File Explorer.
 
-## Hardware
+### OLED
 
-- XIAO RP2040
-- 16 switches
-- 16 1N4148 diodes
-- I2C OLED
-- Custom PCB
-- 3D printed case
+The OLED normally shows:
 
-## Files
+`AIRPAD`
 
-`CAD` has the case and assembly files.
+`READY`
 
-`PCB` has the KiCad files and BOM.
+When I press a key, it shows what that key does. For example, pressing the copy key changes the display to `COPY`.
 
-`Firmware` has the QMK source code.
+## BOM
 
-`production` has the Gerbers, case files, and compiled UF2 firmware.
-
-## Firmware
-
-The firmware is written with QMK.
-
-Some keys are normal shortcuts like copy and paste, while others open programs like VS Code, Discord, and Notepad. The bottom row is mainly for controlling YouTube.
+- 16x Mechanical switches
+- 16x Keycaps
+- 16x 1N4148 diodes
+- 1x XIAO RP2040
+- 1x 0.91" OLED display
+- 1x Custom PCB
+- 1x 3D printed case
